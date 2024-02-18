@@ -4,3 +4,7 @@
 .font-raleway{
     font-family: "Raleway", sans-serif;
 } */
+
+.hero-overlay {
+    background-color: none;
+}
