@@ -82,7 +82,7 @@
                         <p class="mb-5 text-lg font-normal text-white">Booking Made Easy, Travel Made Better. Our
                             platform offers seamless booking experiences, ensuring you can easily secure your journey.
                         </p>
-                        <button class="btn bg-[#1DD100] border-[#1DD100] text-[#030712] ">Buy Tickets</button>
+                        <button onclick="scrollBuyTicketsBtn()" class="btn bg-[#1DD100] border-[#1DD100] text-[#030712] ">Buy Tickets</button>
 
                         <div class="absolute ml-[45px] md:ml-[45px] mt-[50px]">
                             <!-- stet card -->
@@ -192,7 +192,7 @@
             </div>
             <hr class="mb-8 md:mb-[120px] border-2 border-[#1DD100]">
         </section>
-        <section class="h-[2208px] bg-[#F7F8F8]">
+        <section class="h-[1900px] bg-[#F7F8F8]">
             <!-- ----------------------------------------------------- -->
             <section>
                 <!-- G.H Paribahan -->
@@ -253,33 +253,436 @@
 
             </section>
 
-            <section class="mt-6 md:w-[1170px] md:h-[1056px] md:ml-[135px] p-8 rounded-xl bg-white">
+            <section id="select-seat"
+                class="mt-16 md:mt-6 px-4 md:px-8 md:w-full md:max-w-[1170px] md:h-[1075px] md:ml-[135px] md:p-8 rounded-xl bg-white">
                 <!-- select your seat section -->
-                <div class="flex ">
-                    <div class="w-[674px]">
-                        <h1 class="text-2xl  font-semibold text-[#030712]">Select Your Seat</h1>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-[674px]">
+                        <h1 class="text-2xl font-semibold text-[#030712]">Select Your Seat</h1>
                         <hr class="border-dashed border-1 border-[#03071233] mt-6 ">
-                        <div class="flex gap-[385px] ">
-
-                            <div class="mt-4 flex gap-1">
+                        <div class="flex gap-4 md:gap-[385px] mt-4">
+                            <div class="flex gap-1">
                                 <img src="images/seat-gray.png" alt="">
                                 <p>Available Seat</p>
                             </div>
-                            <div class="gap-1 flex mt-4">
+                            <div class="flex gap-1">
                                 <img src="images/seat-green-filled.png" alt="">
                                 <p>Selected</p>
                             </div>
                         </div>
                         <hr class="border-dashed border-1 border-[#03071233] mt-5 ">
+                        <div>
+                            <!-- Bus seat layout code here -->
+                            <div class="ml-[500px]">
+                                <!-- wheel -->
+                                <kbd
+                                    class="kbd rounded-xl border-none mt-6 w-[110px] h-[56px] bg-[#0307121A] px-10 py-4"><img
+                                        src="images/wheel.png" alt=""></kbd>
+                            </div>
+                            <!-- 1st......Row............ -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">A</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd onclick="play('A1')" id="A1"
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">A1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">A2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">A3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">A4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">B</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">B1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">B2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">B3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">B4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">C</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">C1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">C2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">C3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">C4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">D</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">D1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">D2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">D3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">D4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">E</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">E1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">E2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">E3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">E4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">F</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">F1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">F2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">F3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">F4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">G</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">G1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">G2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">G3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">G4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">H</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">H1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">H2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">H3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">H4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 9rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">I</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">I1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">I2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">I3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">I4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10rd.......Row........... -->
+                            <div class="flex gap-[80px]">
+                                <!-- main div -->
+                                <div class="flex gap-4 ">
+                                    <div class="mt-10 ">
+                                        <div>
+                                            <kbd
+                                                class=" rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 ">J</kbd>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-8">
+                                        <!-- 1st row 1st col -->
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">J1</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">J2</kbd>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <!-- 1st row 2nd col-->
+                                    <div class="flex gap-8">
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">J3</kbd>
+                                        </div>
+                                        <div>
+                                            <kbd
+                                                class="kbd rounded-xl text-lg font-medium text-[#03071280] border-none mt-6 w-[110px] h-[56px] bg-[#F7F8F8] px-10 py-4">J4</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="border-l-2 h-[992px] border-[#03071233] ml-8  border-dashed ">
-                        <h1 class="text-2xl ml-8  font-semibold text-[#030712]">Select Your Seat</h1>
-                        <hr class="border-dashed ml-8 w-[409px] border-1 border-[#03071233] mt-6 ">
-                    <!-- ---------------------seat---card ----------------------->
-                        <div class="w-[433px] h-[330px] mt-6 m-1 bg-[#F7F8F8] rounded-xl">
+                    <div class="md:ml-8 md:border-l-2 md:border-[#03071233] md:border-dashed md:pl-8 md:mt-0 mt-8">
+                        <!-- for responsive -->
+                        <h1 class="text-2xl font-semibold text-[#030712]">Select Your Seat</h1>
+                        <hr class="border-dashed border-1 border-[#03071233] mt-6 ">
+                        <!-- ---------------------seat---card ----------------------->
+                        <div class="w-full md:w-[433px] h-[330px] mt-6 bg-[#F7F8F8] rounded-xl">
+                            <!-- Seat card code here -->
+
                             <div class="flex justify-center gap-[120px] p-4">
                                 <div>
-                                    <p class="text-[16px] text-[#030712] font-medium">Seat<span class="text-[#FFFFFF] p-1 rounded-lg bg-[#1DD100]">2</span></p>
+                                    <p class="text-[16px] text-[#030712] font-medium">Seat<span
+                                            class="text-[#FFFFFF] p-1 rounded-lg bg-[#1DD100]">2</span></p>
                                 </div>
                                 <div>
                                     <p class="text-[16px] text-[#030712] font-medium">Class</p>
@@ -322,26 +725,66 @@
                             </div>
                             <!-- input filed -->
                             <div class="flex absolute ml-8">
-                                <div class="" >
-                                    <input class="p-5 rounded-2xl w-[369px]" type="text" placeholder="Have any coupon?" id="">
+                                <div class="">
+                                    <input class="p-5 rounded-2xl w-[369px]" type="text" placeholder="Have any coupon?"
+                                        id="">
                                 </div>
                                 <div class="mt-2 ml-[280px] absolute">
-                                    <button class=" btn w-[80px] h-[40px] bg-[#1DD100] p-3" disabled="disabled">Apply</button>
+                                    <button class=" btn w-[80px] h-[40px] text-[#FFFFFF] bg-[#1DD100] p-3"
+                                        disabled="disabled">Apply</button>
                                 </div>
                             </div>
-                            
+                            <!-- ---------------------------------------- -->
                         </div>
-                        <div class="flex justify-center gap-[210px] p-4">
+                        <div class="flex justify-center gap-4 md:gap-[210px] p-4">
+                            <!-- Total price code here -->
                             <div>
                                 <p class="text-[16px] text-[#030712] font-medium">Grand Price</p>
                             </div>
                             <div>
                                 <p class="text-[16px] text-[#030712] font-medium">BDT 1100</p>
                             </div>
+
+                        </div>
+                        <div class="ml-4">
+                            <!-- Passenger Name input field -->
+                            <!-- Passenger Name input field code here -->
+                            <p class="text-[16px] mt-6 text-[#030712] font-semibold">Passenger Name*</p>
+                            <input class="p-5 mt-4 rounded-2xl border-2 border-gray-300 w-[433px]" type="text" name=""
+                                placeholder="Enter your name" id="">
+                        </div>
+                        <div class="ml-4">
+                            <!-- Phone Number input field -->
+                            <!-- Phone Number input field code here -->
+                            <p class="text-[16px] mt-6 text-[#030712] font-semibold">Phone Number*</p>
+                            <input class="p-5 mt-4 rounded-2xl border-2 border-gray-300 w-[433px]" type="number" name=""
+                                placeholder="Enter your phone number" id="">
+                        </div>
+                        <div class="ml-4">
+                            <!-- Email Id input field -->
+                            <!-- Email Id input field code here -->
+                            <p class="text-[16px] mt-6 text-[#030712] font-semibold">Email Id</p>
+                            <input class="p-5 mt-4 rounded-2xl border-2 border-gray-300 w-[433px]" type="email" name=""
+                                placeholder="Enter your email" id="">
+                        </div>
+                        <div class="ml-4">
+                            <!-- Next button -->
+                            <!-- Next button code here -->
+                            <button
+                                class="mt-6 text-[#FFFFFF] text-xl font-extrabold rounded-2xl btn w-[433px] h-[65px] bg-[#1DD100] p-3">Next</button>
+                        </div>
+                        <div class="flex justify-center mt-6 gap-4 md:gap-11">
+                            <!-- Terms and conditions -->
+                            <!-- Terms and conditions code here -->
+                            <div>
+                                <a class="text-[#03071299]" href=""><u>Terms and Conditions</u></a>
+                            </div>
+                            <div>
+                                <a class="text-[#03071299]" href=""><u>Cancellation Policy</u></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </section>
         </section>
 
@@ -349,9 +792,12 @@
     </main>
 
     <footer>
+        <!-- footer section -->
+        
 
     </footer>
     <script src="scripts/utility.js"></script>
+    <script src="scripts/functionality.js"></script>
 </body>
 
 </html>
