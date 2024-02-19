@@ -30,20 +30,89 @@ var selectedSeats = [];
       document.getElementById('errorMessage').style.display = 'none';
     }
 // seat count and left
+    // const allSelectedSeat = document.getElementsByClassName("kbd");
+    // let seat = 0;
+    // let totalSeat = 40;
+    // let totalPrice = 0;
+    // for(const selectedSeat of allSelectedSeat){
+    //     selectedSeat.addEventListener("click",function(){
+    //         seat = seat + 1;
+    //         totalSeat = totalSeat - 1;
+    //         totalPrice = totalPrice + 550;
+    //         document.getElementById("selected-seat").innerText = seat;
+    //         document.getElementById("selected-seat-left").innerText = totalSeat;
+    //         document.getElementById("total-price").innerText = totalPrice;
+    //     });
+    // }
+
+    // another way 
     const allSelectedSeat = document.getElementsByClassName("kbd");
     let seat = 0;
     let totalSeat = 40;
     let totalPrice = 0;
-    for(const selectedSeat of allSelectedSeat){
-        selectedSeat.addEventListener("click",function(){
+    const applyCouponBtn = document.getElementById("applyCouponBtn");
+
+    for (const selectedSeat of allSelectedSeat) {
+        selectedSeat.addEventListener("click", function () {
             seat = seat + 1;
             totalSeat = totalSeat - 1;
             totalPrice = totalPrice + 550;
             document.getElementById("selected-seat").innerText = seat;
             document.getElementById("selected-seat-left").innerText = totalSeat;
             document.getElementById("total-price").innerText = totalPrice;
+
+            // Enable coupon button when 4 seats are selected
+            if (seat >= 4) {
+                applyCouponBtn.removeAttribute("disabled");
+            }
         });
     }
+
+    // const allSelectedSeat = document.getElementsByClassName("kbd");
+    // let seat = 0;
+    // let totalSeat = 40;
+    // let totalPrice = 0;
+    // let grandTotalPrice = 0;
+    // const applyCouponBtn = document.getElementById("applyCouponBtn");
+
+    // for (const selectedSeat of allSelectedSeat) {
+    //     selectedSeat.addEventListener("click", function () {
+    //         seat = seat + 1;
+    //         totalSeat = totalSeat - 1;
+    //         totalPrice = totalPrice + 550;
+    //         document.getElementById("selected-seat").innerText = seat;
+    //         document.getElementById("selected-seat-left").innerText = totalSeat;
+    //         document.getElementById("total-price").innerText = totalPrice;
+
+    //         // Enable coupon button when 4 seats are selected
+    //         if (seat >= 4) {
+    //             applyCouponBtn.removeAttribute("disabled");
+    //         }
+    //     });
+    // }
+
+    // function applyCoupon() {
+    //     const couponInput = document.getElementById("couponInput").value.toLowerCase();
+    //     const discountPercentage = getDiscountPercentage(couponInput);
+    //     if (discountPercentage !== null) {
+    //         grandTotalPrice = totalPrice - (totalPrice * discountPercentage / 100);
+    //         document.getElementById("grand-total-price").innerText = grandTotalPrice;
+            
+    //         // Display discounted price
+    //         document.getElementById("discountedPrice").innerText = grandTotalPrice;
+    //     }
+    // }
+
+    // function getDiscountPercentage(couponCode) {
+    //     switch (couponCode) {
+    //         case "couple20":
+    //             return 20;
+    //         case "new15":
+    //             return 15;
+    //         default:
+    //             return null; // No discount for unknown coupon codes
+    //     }
+    // }
 
     // next button
      // Get the input fields and the NEXT button
@@ -80,4 +149,6 @@ var selectedSeats = [];
     }
 
 
+
+    
    

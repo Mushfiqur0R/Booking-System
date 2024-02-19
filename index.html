@@ -739,12 +739,12 @@
                             </div>
                             <!-- input filed -->
                             <div class="flex absolute ml-8">
-                                <div class="">
-                                    <input class="p-5 rounded-2xl w-[369px]" type="text" placeholder="Have any coupon?"
-                                        id="">
+                                <div  id="couponInput" class="">
+                                    <input  onchange="applyCoupon()" class="p-5 rounded-2xl w-[369px]" type="text" placeholder="Have any coupon?"
+                                    >
                                 </div>
                                 <div class="mt-2 ml-[280px] absolute">
-                                    <button class=" btn w-[80px] h-[40px] text-[#FFFFFF] bg-[#1DD100] p-3"
+                                    <button id="applyCouponBtn" class=" btn w-[80px] h-[40px] text-[#FFFFFF] bg-[#1DD100] p-3"
                                         disabled="disabled">Apply</button>
                                 </div>
                             </div>
@@ -756,7 +756,7 @@
                                 <p class="text-[16px] text-[#030712] font-medium">Grand Price</p>
                             </div>
                             <div>
-                                <p class="text-[16px] text-[#030712] font-medium">BDT 1100</p>
+                                <p class="text-[16px] text-[#030712] font-medium">BDT <span id="discountedPrice">0</span> </p>
                             </div>
 
                         </div>
